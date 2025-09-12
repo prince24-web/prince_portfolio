@@ -37,7 +37,7 @@ export const metadata = {
     siteName: "Prince Chidera Portfolio",
     images: [
       {
-        url: "/avatar.png", // your avatar here
+        url: "/avatar.jpg", // your avatar here
         width: 800,
         height: 800,
         alt: "Prince Chidera Avatar",
@@ -50,7 +50,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Prince Chidera | Portfolio",
     description: "Building modern apps with Next.js, Supabase, Tailwind, and Python.",
-    images: ["/avatar.png"], // same avatar for preview
+    images: ["/avatar.jpg"], // same avatar for preview
   },
 };
 
