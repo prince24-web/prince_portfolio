@@ -24,7 +24,7 @@ const projects = [
    {
     id: 1,
     title: 'PrepPal — Lecture Summarizer',
-    desc: 'An EdTech web app that records lectures, transcribes them into text, and summarizes key points. Built to help students revise smarter and faster.',
+    desc: 'An AI-study tool that transforms your PDF into summaries, flashcard and interractive quizzies instantly. helps study smarter with AI that understands your content',
     tags: ['Next.js', 'Tailwind', 'Supabase', "ExpressJS","Gemini"],
     demo: 'https://prep-pal-blond.vercel.app/',
     repo: 'https://github.com/prince24-web/Prep-Pal',
@@ -70,13 +70,48 @@ export default function Portfolio() {
   const [contactState, setContactState] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState(null);
 
-  const onContactSubmit = async (e) => {
-    e.preventDefault();
-    // Placeholder: integrate with email API or serverless function (Formspree, Resend, Vercel function)
-    setStatus('Sending...');
-    setTimeout(() => setStatus('Message sent — I will reply to your email!'), 900);
-    setContactState({ name: '', email: '', message: '' });
-  };
+// inside your component (React/Next)
+const onContactSubmit = async (e) => {
+  e.preventDefault(); // prevent page reload
+
+  // show a friendly UI state
+  setStatus("Sending...");
+
+  try {
+    // send a POST request to the API route with JSON body
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: contactState.name,
+        email: contactState.email,
+        message: contactState.message,
+      }),
+    });
+
+    // parse response JSON
+    const data = await res.json();
+
+    if (!res.ok) {
+      // if API returned an error status, show the error to the user
+      setStatus(data.error || "Failed to send message");
+    } else {
+      // success: clear form and inform user
+      setStatus("Message sent — thank you!");
+      setContactState({ name: "", email: "", message: "" });
+    }
+  } catch (err) {
+    // network or unexpected error
+    console.error("Contact form error:", err);
+    setStatus("Network error. Please try again later.");
+  } finally {
+    // optionally clear the status after a while
+    setTimeout(() => setStatus(null), 6000);
+  }
+};
+
 
 const onClick = (link) => {
   if (link) {
