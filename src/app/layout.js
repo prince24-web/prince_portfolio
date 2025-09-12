@@ -29,11 +29,11 @@ export const metadata = {
     "Tailwind",
     "EdTech"
   ],
-  authors: [{ name: "Prince Chidera", url: "https://your-portfolio.com" }],
+  authors: [{ name: "Prince Chidera", url: "https://prince-portfolio-omega.vercel.app/" }],
   openGraph: {
     title: "Prince Chidera | Portfolio",
     description: "Full-Stack Developer building modern web apps with Next.js, Tailwind, Supabase, and Python.",
-    url: "https://your-portfolio.com",
+    url: "https://prince-portfolio-omega.vercel.app/",
     siteName: "Prince Chidera Portfolio",
     images: [
       {
