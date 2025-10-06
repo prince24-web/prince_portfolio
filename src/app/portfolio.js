@@ -23,15 +23,6 @@ import { motion } from 'framer-motion';
 const projects = [
    {
     id: 1,
-    title: 'PrepPal — Lecture Summarizer',
-    desc: 'An AI-study tool that transforms your PDF into summaries, flashcard and interractive quizzies instantly. helps study smarter with AI that understands your content',
-    tags: ['Next.js', 'Tailwind', 'Supabase', "ExpressJS","Gemini"],
-    demo: 'https://prep-pal-blond.vercel.app/',
-    repo: 'https://github.com/prince24-web/Prep-Pal',
-    image: "/preppal.png"
-  },
-  {
-    id: 2,
     title: 'Stratify — AI Marketing Assistant',
     desc: 'An AI-powered marketing tool that generates campaign ideas, automates social posts, and helps startups grow their online presence with minimal effort.',
     tags: ['Nextjs', 'Framer Motion', 'Tailwind', "API", "expressJS", "Supabase"],
@@ -40,16 +31,35 @@ const projects = [
     image: "/stratify.png"
   },
   {
+    id: 2,
+    title: 'Static Raider',
+    desc: 'A web Scraping AI-agent',
+    tags: ["Nextjs","Tailwind","gemini"],
+    demo: 'https://static-raider.vercel.app/',
+    repo: 'https://github.com/prince24-web/static-raider',
+    image: "/static_raider.png"
+  },
+   {
     id: 3,
+    title: 'PrepPal — Lecture Summarizer',
+    desc: 'An AI-study tool that transforms your PDF into summaries, flashcard and interractive quizzies instantly. helps study smarter with AI that understands your content',
+    tags: ['Next.js', 'Tailwind', 'Supabase', "ExpressJS","Gemini"],
+    demo: 'https://prep-pal-blond.vercel.app/',
+    repo: 'https://github.com/prince24-web/Prep-Pal',
+    image: "/preppal.png"
+  },
+  
+  {
+    id: 4,
     title: 'AI-Powered Resume Review Tool',
     desc: 'A smart career tool that analyzes resumes using AI, highlights strengths, and suggests improvements to boost job application success rates.',
     tags: ['Node.js', 'NextJS', 'Gemini', "tailwind"],
     demo: 'https://check-my-cv-eu3s-7d2bny1if-prince24-webs-projects.vercel.app/',
     repo: 'https://github.com/prince24-web/CheckMyCv',
-    image: "/resumeai.png"
+    mage: "/resumeai.png"
   },
   {
-    id: 4,
+    id: 5,
     title: 'eTrade',
     desc: 'An online gadget store',
     tags: ["react","css"],
@@ -57,6 +67,7 @@ const projects = [
     repo: 'https://github.com/prince24-web/techStore',
     image: "/roco.png"
   },
+  
 ]
 const IconGithub = () => (
   <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden>
