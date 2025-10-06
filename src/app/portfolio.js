@@ -41,7 +41,7 @@ const projects = [
   },
    {
     id: 3,
-    title: 'PrepPal — Lecture Summarizer',
+    title: 'PrepPal - AI Study tool',
     desc: 'An AI-study tool that transforms your PDF into summaries, flashcard and interractive quizzies instantly. helps study smarter with AI that understands your content',
     tags: ['Next.js', 'Tailwind', 'Supabase', "ExpressJS","Gemini"],
     demo: 'https://prep-pal-blond.vercel.app/',
@@ -56,7 +56,7 @@ const projects = [
     tags: ['Node.js', 'NextJS', 'Gemini', "tailwind"],
     demo: 'https://check-my-cv-eu3s-7d2bny1if-prince24-webs-projects.vercel.app/',
     repo: 'https://github.com/prince24-web/CheckMyCv',
-    mage: "/resumeai.png"
+    image: "/cv.png"
   },
   {
     id: 5,
