@@ -23,6 +23,15 @@ import { motion } from 'framer-motion';
 const projects = [
    {
     id: 1,
+    title: 'Retro — Chat With Your Documents',
+    desc: 'Upload your PDF files and start having an intelligent chat with them. Get instant summaries, answers, and insights powered by AI.',
+    tags: ['Nextjs', 'semantic search', 'vector embedding', "supabase vector store", "cosine similarity","langchain", "Hugging face","Gemini"],
+    demo: 'https://retro-psi-one.vercel.app/',
+    repo: 'https://github.com/prince24-web/Retro',
+    image: "/retro.png"
+  },
+   {
+    id: 2,
     title: 'Stratify — AI Marketing Assistant',
     desc: 'An AI-powered marketing tool that generates campaign ideas, automates social posts, and helps startups grow their online presence with minimal effort.',
     tags: ['Nextjs', 'Framer Motion', 'Tailwind', "API", "expressJS", "Supabase"],
@@ -31,7 +40,7 @@ const projects = [
     image: "/stratify.png"
   },
   {
-    id: 2,
+    id: 3,
     title: 'Static Raider',
     desc: 'A web Scraping AI-agent',
     tags: ["Nextjs","Tailwind","gemini"],
@@ -40,7 +49,7 @@ const projects = [
     image: "/static_raider.png"
   },
    {
-    id: 3,
+    id: 4,
     title: 'PrepPal - AI Study tool',
     desc: 'An AI-study tool that transforms your PDF into summaries, flashcard and interractive quizzies instantly. helps study smarter with AI that understands your content',
     tags: ['Next.js', 'Tailwind', 'Supabase', "ExpressJS","Gemini"],
@@ -50,7 +59,7 @@ const projects = [
   },
   
   {
-    id: 4,
+    id: 5,
     title: 'AI-Powered Resume Review Tool',
     desc: 'A smart career tool that analyzes resumes using AI, highlights strengths, and suggests improvements to boost job application success rates.',
     tags: ['Node.js', 'NextJS', 'Gemini', "tailwind"],
@@ -59,7 +68,7 @@ const projects = [
     image: "/cv.png"
   },
   {
-    id: 5,
+    id: 6,
     title: 'eTrade',
     desc: 'An online gadget store',
     tags: ["react","css"],
