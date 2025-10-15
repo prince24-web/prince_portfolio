@@ -177,7 +177,7 @@ const onClick = (link) => {
               Hi, I’m <span className="text-purple-600">Prince Chidera</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="mt-4 max-w-xl text-gray-700">
-              I build fast, accessible, and polished front-end experiences. I love taking design ideas and turning them into code — focusing on performance, animations and developer-friendly architecture.
+             “I’m an AI Engineer and Web Developer helping startups, creators and businesses build fast, intelligent, and scalable applications powered by modern AI.
             </motion.p>
 
             <motion.div className="mt-6 flex gap-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25 }}>
@@ -207,7 +207,7 @@ const onClick = (link) => {
                 <img src="/avatar.jpg" alt="Prince Chidera avatar" className="w-36 h-36 object-cover rounded-full mx-auto border-4 border-white shadow-md" />
                 <div className="mt-4 text-center">
                   <div className="font-semibold text-lg">Prince Chidera</div>
-                  <div className="text-sm text-gray-600">Frontend Developer</div>
+                  <div className="text-sm text-gray-600">AI engineer<br/>& <br/> Web Developer</div>
                 </div>
                 <div className="mt-4 flex justify-center gap-3">
                   <a href="#projects" className="px-3 py-1 rounded-md ring-1 ring-gray-200 bg-white/50 backdrop-blur-sm text-sm">Projects</a>
@@ -227,8 +227,11 @@ const onClick = (link) => {
             <div>
               <h3 className="text-xl font-semibold">About me</h3>
               <p className="mt-2 text-gray-700 max-w-3xl">
-                I’m a frontend developer with 3 years of experience building production-ready web apps. I specialize in React, Next.js and Tailwind CSS, and I focus on animations and UX using Framer Motion and GSAP. I’m currently studying Software Engineering and building PrepPal — an EdTech startup.
-              </p>
+                I’m an applied AI engineer and web developer passionate about building intelligent, user-focused applications. With 3 years of experience in modern web development using React, Next.js, and Tailwind CSS, I specialize in integrating AI systems into real-world products.
+                My expertise includes developing AI-powered features such as <strong>document chat, RAG pipelines, and intelligent agents </strong> combining strong frontend architecture with practical AI implementation using LangChain, Supabase, Hugging Face, and Gemini.
+                I’m currently studying Software Engineering and exploring the future of human-AI interaction through applied projects.
+                </p>
+
               <ul className="mt-3 flex flex-wrap gap-3 text-sm">
                 <li className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/50 ring-1 ring-gray-200">🎓 Software Engineering</li>
                 <li className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/50 ring-1 ring-gray-200">📍 Nigeria</li>
@@ -243,16 +246,17 @@ const onClick = (link) => {
   <h4 className="text-lg font-semibold mb-4">Tech Stack</h4>
   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
     {[
-      { id: "html", label: "HTML", logo: "/html.svg" },
-      { id: "css", label: "CSS", logo: "/css.svg" },
+      { id: "langchain", label: "Langchain", logo: "/langchain.png" },
+      { id: "huggingface", label: "Hugging face", logo: "/huggingface.png" },
+      { id: "python", label: "Python", logo: "/python.svg" },
       { id: "js", label: "JavaScript", logo: "/js.svg" },
       { id: "tailwind", label: "Tailwind", logo: "/tailwind.svg" },
       { id: "react", label: "React", logo: "/react.svg" },
       { id: "next", label: "Next.js", logo: "/nextjs.svg" },
+      { id: "supabase", label: "Supabase", logo: "/supabase.png" },
       { id: "git", label: "Git", logo: "/git.svg" },
       { id: "github", label: "GitHub", logo: "/github.svg" },
-      { id: "supabase", label: "Supabase", logo: "/supabase.png" },
-      { id: "python", label: "Python", logo: "/python.svg" },
+     
     ].map((tech) => (
       <motion.div
         key={tech.id}
